@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/pagina_list_fragment"
         android:name="com.example.maestrodetalle.paginaListFragment"
-        android:label="paginaListFragment">
+        android:label="Lista de páginas">
         <action
             android:id="@+id/show_pagina_detail"
             app:destination="@id/pagina_detail_fragment" />
@@ -16,7 +16,7 @@
     <fragment
         android:id="@+id/pagina_detail_fragment"
         android:name="com.example.maestrodetalle.paginaDetailFragment"
-        android:label="pagina_detail"
+        android:label="Web view"
         tools:layout="@layout/fragment_pagina_detail">
         <argument
             android:name="item_id"

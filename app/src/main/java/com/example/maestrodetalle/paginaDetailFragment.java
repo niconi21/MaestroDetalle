@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.example.maestrodetalle.placeholder.PlaceholderContent;
@@ -75,15 +76,13 @@ public class paginaDetailFragment extends Fragment {
         binding = FragmentPaginaDetailBinding.inflate(inflater, container, false);
         View rootView = binding.getRoot();
 
-        if(mItem!=null){
-try {
+        if (mItem != null) {
+                WebView webView = (WebView)rootView.findViewById(R.id.webview);
+                webView.setWebViewClient(new WebViewClient());
+                webView.getSettings().setJavaScriptEnabled(true);
+                webView.loadUrl(mItem.website_url);
 
-    WebView myWebView = (WebView) getActivity().findViewById(R.id.webview);
-    myWebView.loadUrl("http://www.example.com");
-}
-catch (Exception ex){
-    Log.d("Error personal", ex.toString());
-}
+
         }
         return rootView;
     }

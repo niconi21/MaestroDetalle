@@ -25,9 +25,9 @@ public class PlaceholderContent {
 
     static {
         // Add some sample items.
-        addItem(new PlaceholderItem("1", "Amazon","http://www.amazon.com"));
-        addItem(new PlaceholderItem("2", "Google","http://www.google.com"));
-        addItem(new PlaceholderItem("3", "Android","http://www.android.com"));
+        addItem(new PlaceholderItem("1", "Amazon","https://www.amazon.com/"));
+        addItem(new PlaceholderItem("2", "Google","https://www.google.com/"));
+        addItem(new PlaceholderItem("3", "Android","https://www.android.com/"));
 
     }
 
